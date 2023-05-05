@@ -1,0 +1,18 @@
+<h1>celular</h1>
+
+
+<dl>
+   <dt>placa</dt>
+   <dd><%= @phone.marca %></dd>
+   <dt>color</dt>
+   <dd><%= @phone.precio %></dd>
+   <dt>marca</dt>
+   <dd><%= @phone.modelo %></dd>
+   <dt>modelo</dt>
+   <dd><%= @phone.memoria %></dd>
+
+</dl>
+
+<%= link_to "Lista de celulares", phones_index_path %>
+<br>
+<%= link_to "Editar", edit_phone_path(@phone) %>

@@ -1,0 +1,21 @@
+<h1> Lista de computadores</h1>
+
+
+<table class="table">
+  <thead class = "thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">marca</th>
+      <th scope="col">precio</th>
+      <th scope="col">modelo</th>
+      <th scope="col">ram</th>
+      <th scope="col">capacidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render 'laptop' %>
+  </tbody>  
+   
+</table>
+
+<%= link_to "Agregar computador", new_laptop_path %>

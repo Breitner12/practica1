@@ -1,0 +1,18 @@
+<h1>carro</h1>
+
+
+<dl>
+   <dt>placa</dt>
+   <dd><%= @car.placa %></dd>
+   <dt>color</dt>
+   <dd><%= @car.color %></dd>
+   <dt>marca</dt>
+   <dd><%= @car.marca %></dd>
+   <dt>modelo</dt>
+   <dd><%= @car.modelo %></dd>
+
+</dl>
+
+<%= link_to "Lista de carros", cars_index_path %>
+<br>
+<%= link_to "Editar", edit_car_path(@car) %>

@@ -1,0 +1,11 @@
+<% @phones.each do |phone| %>
+<tr>
+
+      <th scope="row"><%= phone.id %></th>
+      <td><%= link_to phone.marca, phone_path(phone) %></td>
+      <td><%=phone.precio %></td>
+      <td><%=phone.modelo %></td>
+      <td><%=phone.memoria %></td>
+    
+</tr>
+<% end %>

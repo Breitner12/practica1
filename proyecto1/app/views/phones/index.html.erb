@@ -1,0 +1,20 @@
+<h1> Lista de celulares</h1>
+
+
+<table class="table">
+  <thead class = "thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">marca</th>
+      <th scope="col">precio</th>
+      <th scope="col">modelo</th>
+      <th scope="col">memoria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render 'phones' %>
+  </tbody>  
+   
+</table>
+
+<%= link_to "Adicionar celular", new_phone_path %>

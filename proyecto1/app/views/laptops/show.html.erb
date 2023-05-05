@@ -1,0 +1,20 @@
+<h1>computador</h1>
+
+
+<dl>
+   <dt>marca</dt>
+   <dd><%= @laptop.marca %></dd>
+   <dt>precio</dt>
+   <dd><%= @laptop.precio %></dd>
+   <dt>modelo</dt>
+   <dd><%= @laptop.modelo %></dd>
+   <dt>ram</dt>
+   <dd><%= @laptop.ram %></dd>
+    <dt>capacidad</dt>
+   <dd><%= @laptop.capacidad %></dd>
+
+</dl>
+
+<%= link_to "Lista de computadores", laptops_index_path %>
+<br>
+<%= link_to "Editar", edit_laptop_path(@laptop) %>

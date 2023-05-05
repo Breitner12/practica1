@@ -1,0 +1,12 @@
+<% @laptops.each do |laptop| %>
+<tr>
+
+      <th scope="row"><%= laptop.id %></th>
+      <td><%= link_to laptop.marca, laptop_path(laptop) %></td>
+      <td><%=laptop.precio %></td>
+      <td><%=laptop.modelo %></td>
+      <td><%=laptop.ram %></td>
+      <td><%=laptop.capacidad %></td>
+    
+</tr>
+<% end %>
